@@ -1,0 +1,26 @@
+{
+  "name": "spunkybot",
+  "version": "0.0.1",
+  "description": "spidyjuice's first discord bot",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spidyjuice/sponkybot.git"
+  },
+  "keywords": [
+    "discord",
+    "bot"
+  ],
+  "author": "spidyjuice",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spidyjuice/sponkybot/issues"
+  },
+  "homepage": "https://github.com/spidyjuice/sponkybot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  }
+}

@@ -1,2 +1,8 @@
 #to avoid accidentally doxxing bot token
 config.json
+
+#useless trash it
+art/log_encode_gif.log
+art/log_generate_palette_gif.log
+art/palette.png
+art/*~

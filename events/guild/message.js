@@ -1,4 +1,5 @@
 const fs = require('fs');
+const alwaysping = require('../../alwaysping.js');
 
 module.exports = (Discord, client, message) => {
     var prefix = JSON.parse(fs.readFileSync('./config.json'))['prefix'];
@@ -21,8 +22,16 @@ module.exports = (Discord, client, message) => {
         }
         catch (error) {
          console.log('command attempt failed');
-        //console.error(error);
+        console.log(error);
         //message.reply('I dondt uderstand, something went wrong');
+            try {
+                console.log('doing alwaysping');
+                alwaysping.execute(client, message, cmd, args, Discord);
+            }
+            catch (error) {
+                console.log(error);
+                console.log('alwaysping failed');
+            }
         }
     }
     updatestatus.execute(client, Discord);

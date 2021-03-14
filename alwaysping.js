@@ -61,10 +61,13 @@ module.exports = {
             case ilyregex.test(cmd + args_string):
                 message.channel.send('I love you too! <3');
                 break;
-                case /based/.test(cmd + args_string):
-                message.channel.send('based on what');
+            //the following case is kinda ugly imo, sorry I don't know how to do better in javascript rn
+            case /based/.test(cmd + args_string):
+                if(!/based on/.test(cmd + args_string)){
+                    message.channel.send('based on what');
+                }
                 break;
-                case /i\'m so glad hatsune miku made .*/.test(cmd + args_string):
+            case /i\'m so glad hatsune miku made .*/.test(cmd + args_string):
                 console.log('hatsune miku made something');
                 var made = [
                     'minecraft',

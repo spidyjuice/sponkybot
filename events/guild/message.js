@@ -22,7 +22,7 @@ module.exports = (Discord, client, message) => {
         }
         catch (error) {
          console.log('command attempt failed');
-        console.log(error);
+         //console.log(error);
         //message.reply('I dondt uderstand, something went wrong');
             try {
                 console.log('doing alwaysping');
